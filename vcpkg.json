@@ -2,6 +2,7 @@
   "name": "regdebug",
   "version": "0.1.0",
   "dependencies": [
-    "lua"
+    "lua",
+    "readline"
   ]
 }

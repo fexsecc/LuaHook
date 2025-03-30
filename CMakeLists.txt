@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 ## Find dependencies
 find_package(lua REQUIRED)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(readline REQUIRED IMPORTED_TARGET readline)
 
 file(GLOB SRC_FILES "src/*.cpp")
 ## Create main executable
@@ -19,7 +21,8 @@ target_include_directories(luahook
 target_link_libraries(
   luahook
   PRIVATE
-  lua
+    lua
+    PkgConfig::readline
 )
 
 # ============================================================

@@ -1,0 +1,26 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-DLUA_USE_DLOPEN",
+      "-I/opt/LuaHook/source",
+      "-I/opt/LuaHook/include",
+      "-isystem",
+      "/opt/LuaHook/build/vcpkg_installed/x64-linux/include",
+      "-isystem",
+      "/opt/LuaHook/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include",
+      "-O3",
+      "-DNDEBUG",
+      "-std=gnu++17",
+      "-D_DEFAULT_SOURCE",
+      "-D_XOPEN_SOURCE=600",
+      "-c",
+      "-o",
+      "CMakeFiles/luahook.dir/src/main.cpp.o",
+      "/opt/LuaHook/src/main.cpp"
+    ],
+    "directory": "/opt/LuaHook/build",
+    "file": "/opt/LuaHook/src/main.cpp",
+    "output": "/opt/LuaHook/build/CMakeFiles/luahook.dir/src/main.cpp.o"
+  }
+]
